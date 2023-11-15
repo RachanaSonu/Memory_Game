@@ -149,3 +149,45 @@ button {
         width: 70%;
     }
 }
+
+/* Styles for iPhones in portrait mode */
+@media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    .game {
+        width: 90%;
+    }
+
+    .board {
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 10px;
+    }
+
+    .card {
+        width: 80px;
+        height: 80px;
+    }
+
+    .win-text {
+        font-size: 16pt;
+    }
+}
+
+/* Styles for iPhones in landscape mode */
+@media only screen and (max-width: 667px) and (max-height: 375px) and (-webkit-device-pixel-ratio: 2) {
+    .game {
+        width: 90%;
+    }
+
+    .board {
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 10px;
+    }
+
+    .card {
+        width: 80px;
+        height: 80px;
+    }
+
+    .win-text {
+        font-size: 16pt;
+    }
+}
