@@ -117,3 +117,35 @@ button {
 .highlight {
     color: #7303c0;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for small screens here */
+
+    .game {
+        width: 90%;
+    }
+
+    .board {
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 10px;
+    }
+
+    .card {
+        width: 80px;
+        height: 80px;
+    }
+
+    .win-text {
+        font-size: 16pt;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust styles for medium screens here */
+
+    .game {
+        width: 70%;
+    }
+}
